@@ -1,0 +1,33 @@
+<div class="form-container">
+  <h2>Library</h2>
+  <input type="string" placeholder="Title" [(ngModel)]="title" />
+  <input type="string" placeholder="Author" [(ngModel)]="author" />
+  <input type="string" placeholder="Rating" [(ngModel)]="rating" />
+  <input
+    type="number"
+    placeholder="Publication Year"
+    [(ngModel)]="publication_year"
+  />
+  <input type="string" placeholder="Language" [(ngModel)]="language" />
+  <div class="button-container">
+    <button type="button" class="add-btn" (click)="addBook()">Add Book</button>
+    <button type="button" class="update-btn" (click)="updateBookDetails()">
+      Update
+    </button>
+  </div>
+</div>
+
+<h2>Book List</h2>
+<div class="book-container">
+  <div class="book-item" *ngFor="let book of book_library; let i = index">
+    <app-child [book]="book"></app-child>
+    <div class="button-container">
+      <button type="button" class="edit-btn" (click)="getBookDetails(i)">
+        Edit
+      </button>
+      <button type="button" class="delete-btn" (click)="deleteBook(i)">
+        Delete
+      </button>
+    </div>
+  </div>
+</div>

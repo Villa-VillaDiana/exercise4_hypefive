@@ -1,0 +1,74 @@
+h2 {
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-container input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.add-btn {
+  padding: 8px 16px;
+  margin-left: 5px;
+  background-color: #008140;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.update-btn {
+  padding: 8px 16px;
+  margin-left: 5px;
+  background-color: #0122c4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.edit-btn {
+  margin: 10px 0px;
+  padding: 8px 16px;
+  background-color: #0122c4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  margin: 10px 5px;
+  padding: 8px 16px;
+  background-color: #ab0501;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
